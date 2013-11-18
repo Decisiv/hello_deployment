@@ -1,3 +1,2 @@
-$: << '.'
-require 'app'
+require './app'
 run App
