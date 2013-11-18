@@ -1,3 +1,3 @@
-require 'rubygems'
+source 'rubygems'
 
 gem 'rspec'
