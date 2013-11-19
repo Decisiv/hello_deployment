@@ -2,6 +2,6 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   get '/' do
-    "Hello #{ENV['APP_ENV']}!"
+    "Hello #{ENV.fetch('APP_ENV') { "Deployment"}}!"
   end
 end
