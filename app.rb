@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'haml'
-require 'thin'
 require 'json'
 require_relative 'lib/receiver'
 require_relative 'lib/configuration'
