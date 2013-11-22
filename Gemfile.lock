@@ -1,28 +1,12 @@
 GEM
   remote: https://www.rubygems.org/
   specs:
-    activemodel (3.2.14)
-      activesupport (= 3.2.14)
-      builder (~> 3.0.0)
-    activesupport (3.2.14)
-      i18n (~> 0.6, >= 0.6.4)
-      multi_json (~> 1.0)
-    builder (3.0.4)
     daemons (1.1.9)
     diff-lcs (1.2.4)
     eventmachine (1.0.3)
     haml (3.2.0.beta.1)
       tilt
-    i18n (0.6.5)
     json (1.8.1)
-    mongoid (3.0.9)
-      activemodel (~> 3.1)
-      moped (~> 1.1)
-      origin (~> 1.0)
-      tzinfo (~> 0.3.22)
-    moped (1.2.7)
-    multi_json (1.8.2)
-    origin (1.0.9)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -46,7 +30,6 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     tilt (1.4.1)
-    tzinfo (0.3.38)
 
 PLATFORMS
   ruby
@@ -54,7 +37,6 @@ PLATFORMS
 DEPENDENCIES
   haml
   json
-  mongoid
   rack-test
   rake
   rspec

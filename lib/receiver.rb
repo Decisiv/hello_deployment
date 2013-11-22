@@ -8,8 +8,7 @@ class Receiver
 
   # Fire and forget
   def notify(message)
-    response = Net::HTTP.post_form(uri, message: message)
-    response.code == 200 ? true : false
+    Net::HTTP.post_form(uri, message: message)
   end
 
   private

@@ -11,8 +11,8 @@ class App < Sinatra::Base
   end
 
   post "/receive" do
-    message = params.fetch(:message) { "empty message" }
-    # record message
+    message = params.fetch("message") { "empty message" }
+    "Message '#{message}' received"
   end
 
   # POSTs to receiving application
@@ -21,7 +21,7 @@ class App < Sinatra::Base
   end
 
   post "/send" do
-    message = params[:message]
+    message = params["message"]
     notify(message)
   end
 
@@ -40,9 +40,8 @@ class App < Sinatra::Base
   private
 
   def notify(message)
-    if receiver.notify(message)
-      # record message
-    end
+    response = receiver.notify(message)
+    response.body
   end
 
   def receiver
