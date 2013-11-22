@@ -1,0 +1,9 @@
+%h3 New Message
+%form{name: "send_message_form", method: "POST", action: "/send"}
+  %table
+    %tr
+      %td
+        %label{for: :message} Message
+      %td
+        %input{type: :text, name: :send}
+  %input{type: :submit, value: "Send"}
